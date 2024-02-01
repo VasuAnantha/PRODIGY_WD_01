@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        .hero {
+            background-image: url('vasu.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 5em;
+        }
+
+        .features {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .feature {
+            margin: 1em;
+            padding: 2em;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding: 2em;
+            }
+
+            .feature {
+                padding: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PACK YOUR BAGS</h1>
+        <p>Transforming ideas into reality</p>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to our website</h2>
+        <p>Discover the amazing features of our product</p>
+        <a href="#contact" style="color: white; text-decoration: none; padding: 1em; background-color: #4CAF50; border-radius: 4px;">Get Started</a>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Features</h2>
+        <div class="feature">Explore the world</div>
+        <div class="feature">Enjoy the reality</div>
+        <div class="feature">Chance of free travel</div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <!-- Your contact form goes here -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
